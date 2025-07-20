@@ -1,4 +1,4 @@
-# lahaf-approximate-adder-esim
+<img width="1918" height="1012" alt="image" src="https://github.com/user-attachments/assets/daf9ea0a-61ce-464d-8e72-f41406080913" /># lahaf-approximate-adder-esim
 
 **Implementation of the LAHAF approximate full adder using static CMOS logic in eSim as part of FOSSEE Research Migration Project.**
 
@@ -40,6 +40,14 @@ These applications tolerate small inaccuracies, enabling significant power and a
 ---
 
 ### 📊 **Simulation Results**
+### 🖼️ Schematic Diagram
+![LAHAF Approximate Full Adder Schematic](images/approx_sch.png)
+
+### 📈 Output Waveform
+![Simulation Waveform](images/approx_wave.png)
+
+### 📋 Truth Table
+![Truth Table](images/truthtable.png)
 
 #### ✔️ **Inputs and Outputs**
 - **Inputs**: A, B, Cin  

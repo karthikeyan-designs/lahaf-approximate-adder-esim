@@ -41,10 +41,10 @@ These applications tolerate small inaccuracies, enabling significant power and a
 
 ### 📊 **Simulation Results**
 ### 🖼️ Schematic Diagram
-![LAHAF Approximate Full Adder Schematic](images/approx_sch.png)
+![LAHAF Approximate Full Adder Schematic](images/APPROX_SCH.png)
 
 ### 📈 Output Waveform
-![Simulation Waveform](images/approx_wave.png)
+![Simulation Waveform](images/approx_waveFORM.png)
 
 ### 📋 Truth Table
 ![Truth Table](images/truthtable.png)

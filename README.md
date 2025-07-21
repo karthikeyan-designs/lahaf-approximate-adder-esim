@@ -29,18 +29,28 @@ These applications tolerate small inaccuracies, enabling significant power and a
 
 ### ⚙️ **Key Features**
 
-- Designed using **Static CMOS Logic**
-- Inverted **Sum** used to derive **Carry**
-- Simulated using **eSim** (Ngspice backend)
-- Evaluated for:
-  - **Average Power Consumption**
-  - **Propagation Delay**
+- Designed using **Static CMOS Logic**  
+- **Carry** is derived as the **logical complement** of the **Sum**  
+- Simulated using **eSim** with **Ngspice**  
+- Evaluated for:  
+  - **Average Power Consumption**  
+  - **Propagation Delay**  
   - **Output Waveforms**
 
 ---
 ### 📊 Simulation Results
 ### 🖼️ Schematic Diagram
 ![LAHAF Approximate Full Adder Schematic](APPROX_SCH.png)
+### ⛳ Proposed Logic
+
+The proposed approximate full adder is based on simplified logic where the **Carry** is derived from the **inverted Sum**.
+**Logic Equations:**
+
+The logic for the proposed adder is illustrated below:
+
+![Proposed Adder Equations](logic_eq.png)
+
+
 
 ### 📋 Truth Table
 ![Truth Table](truthtable.png)

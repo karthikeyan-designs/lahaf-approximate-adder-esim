@@ -18,7 +18,6 @@ The focus is on implementing an **approximate full adder (LAHAF)** using **Stati
 
 - **Image Processing**
 - **Machine Learning**
-- **Data Mining**
 - **DSP Processors**
 - **Embedded Systems**
 
@@ -160,6 +159,17 @@ print power_average
 - **P_avg** ≈ 2.244 µW *(absolute value taken)*
 
 > 💡 **Note**: NGSPICE reports the integrated current as negative due to current direction conventions. When calculating power, we use the **absolute value** to represent dissipation.
+
+---
+---
+
+### 🧾 Conclusion
+
+
+
+The proposed approximate full adder was designed and simulated using **eSim**, an open-source EDA tool developed by **FOSSEE, IIT Bombay**. eSim integrates multiple open-source backends such as **KiCad**, **Ngspice**, **Makerchip**, and **NGHDL**, supporting analog, digital, and mixed-signal circuit design. It also supports **SKY130 PDK**, enabling open-source CMOS-level simulations.
+
+The full adder logic was implemented using **simplified static CMOS design**, where the **Carry** is derived from the **inverted Sum**, reducing hardware complexity. Functional simulation was carried out using **Ngspice** to verify logic correctness and measure **power dissipation**. The results suggest that the design is suitable for **low-power, error-tolerant applications**.
 
 ---
 

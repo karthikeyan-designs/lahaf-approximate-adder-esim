@@ -81,7 +81,7 @@ The propagation delays for each input transition (**A**, **B**, **Cin**) affecti
 
 #### 📉 Waveform showing Propagation Delay
 
-![Propagation Delay Waveform](delay_waveform.png)  
+![Propagation Delay Waveform](prop_delay.png)  
 *Figure: Input transitions (A, B, Cin) and corresponding delayed outputs (Sum, Carry)*
 
 

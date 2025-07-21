@@ -44,15 +44,45 @@ These applications tolerate small inaccuracies, enabling significant power and a
 ![LAHAF Approximate Full Adder Schematic](APPROX_SCH.png)
 
 ### 📈 Output Waveform
-![Simulation Waveform](approx_waveFORM.png)
+#### ✔️ **Inputs and Outputs**
+- **Inputs**: A, B, Cin  
+- **Outputs**: Approximate Sum, Approximate Carry  
+![Simulation Waveform](approx_waveform.png)
 
 ### 📋 Truth Table
 ![Truth Table](truthtable.png)
 
-#### ✔️ **Inputs and Outputs**
-- **Inputs**: A, B, Cin  
-- **Outputs**: Approximate Sum, Approximate Carry  
+
 
 ---
 
-#### ⏱️ **Propagation Delay**
+### ⏱️ Propagation Delay in NGSPICE
+
+The propagation delays for each input transition (**A**, **B**, **Cin**) affecting the **Sum** and **Carry** outputs were analyzed using **Ngspice** waveform results. Individual delays were measured from the input transition to the output response.
+
+#### 🔍 Maximum Propagation Delays (from waveform):
+
+- **Sum Output Delays (tp_Sum):**
+  - A ➝ Sum: `4.393737e-05 s`  
+  - B ➝ Sum: `8.687370e-06 s`  
+  - Cin ➝ Sum: `-2.63126e-05 s`  
+  ➤ **tp_Sum_max = 4.393737e-05 s**
+
+- **Carry Output Delays (tp_Cout):**
+  - A ➝ Carry: `4.488767e-05 s`  
+  - B ➝ Carry: `9.637664e-06 s`  
+  - Cin ➝ Carry: `-2.53623e-05 s`  
+  ➤ **tp_Cout_max = 4.488767e-05 s**
+
+#### 🧮 Overall Propagation Delay
+
+- `tp_overall = max(tp_Sum_max, tp_Cout_max)`  
+  ➤ **Overall Propagation Delay = 4.488767e-05 seconds**
+
+#### 📉 Waveform showing Propagation Delay
+
+![Propagation Delay Waveform](delay_waveform.png)  
+*Figure: Input transitions (A, B, Cin) and corresponding delayed outputs (Sum, Carry)*
+
+
+
